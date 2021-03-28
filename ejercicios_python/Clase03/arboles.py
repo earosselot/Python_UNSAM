@@ -8,7 +8,7 @@ Created on Sun Mar 28 10:45:13 2021
 # Lectura de los árboles de un parque
 
 import csv
-from pprint import pprint
+
 
 # def leer_parque(nombre_archivo, parque):
 #     """
@@ -28,7 +28,7 @@ from pprint import pprint
                 
 
 # parque = leer_parque('../Data/arbolado.csv', 'GENERAL PAZ')
-# pprint(parque)
+# print(parque)
 
 #%% Ejercicio 3.19
 # Determinar las especies de un parque
@@ -46,7 +46,7 @@ def especies(lista_arboles):
     return conjunto_especies
     
 # especies = especies(parque)
-# pprint(especies)
+# print(especies)
 
 
 #%% Ejercicio 3.20
@@ -66,7 +66,7 @@ def contar_ejemplares(lista_arboles):
 
 # parque = leer_parque('../Data/arbolado.csv', 'CENTENARIO')
 # numero_ejemplares = contar_ejemplares(parque)
-# pprint(numero_ejemplares.most_common(5))
+# print(numero_ejemplares.most_common(5))
 
 
 #%% Ejercicio 3.21

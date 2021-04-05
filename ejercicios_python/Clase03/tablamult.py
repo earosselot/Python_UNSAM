@@ -25,4 +25,3 @@ for numero in enteros:
         resultado += numero    
     print(linea)
         
-        

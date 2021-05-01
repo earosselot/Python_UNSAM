@@ -42,7 +42,6 @@ AltoDiamJacaranda = [(int(arbol['altura_tot']), int(arbol['diametro']))
                      for arbol in arboleda
                      if arbol['nombre_com'] == 'Jacarandá']
 
-
 # %% Ejercicio 4.21
 # Diccionario con medidas
 
@@ -54,9 +53,9 @@ def medidas_de_especies(especies, arboleda):
     """
 
     diccionario = {especie: [(int(arbol['altura_tot']), int(arbol['diametro']))
-                             for arbol in arboleda
-                             if arbol['nombre_com'] == especie]
-                   for especie in especies}
+                              for arbol in arboleda
+                              if arbol['nombre_com'] == especie]
+                    for especie in especies}
     return diccionario
 
 

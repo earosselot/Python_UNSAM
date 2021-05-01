@@ -5,6 +5,9 @@ Created on Thu Apr  1 12:32:58 2021
 @author: Eduardo
 """
 
+# %% Ejercicio 4.8
+# Intertir una lista
+
 def invertir_lista(lista):
     """ Devuelve una lista con sus elementos invertidos
     """

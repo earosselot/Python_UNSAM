@@ -5,6 +5,9 @@ Created on Thu Apr  1 12:12:26 2021
 @author: Eduardo
 """
 
+# %% Ejercicio 4.6
+# Buesquedas de un elemento
+
 def buscar_u_elemento(lista, elemento):
     """ Función que recibe un lista y un elemento y devuelve la posición de la
     última aparición de ese elemento en la lista, o -1 si el elemento no
@@ -17,6 +20,10 @@ def buscar_u_elemento(lista, elemento):
         pos -= 1
     return pos
 
+buscar_u_elemento([1,2,3,2,3,4],1)  # 0
+buscar_u_elemento([1,2,3,2,3,4],2)  # 3
+buscar_u_elemento([1,2,3,2,3,4],3)  # 4
+buscar_u_elemento([1,2,3,2,3,4],5)  # -1
 
 def buscar_n_elemento(lista, elemento):
     """ Función que recibe un lista y un elemento y devuelve la cantidad de 
@@ -28,9 +35,16 @@ def buscar_n_elemento(lista, elemento):
             numElem += 1
     return numElem
 
+buscar_n_elemento([1, 1, 1, 3, 2, 1, 5, 3, 1, 5, -1, 2, 4], 1)  # 5
+buscar_n_elemento([1, 1, 1, 3, 2, 1, 5, 3, 1, 5, -1, 2, 4], 2)  # 2
+buscar_n_elemento([1, 1, 1, 3, 2, 1, 5, 3, 1, 5, -1, 2, 4], -1) # 1
+buscar_n_elemento([1, 1, 1, 3, 2, 1, 5, 3, 1, 5, -1, 2, 4], -2) # 0
+
+# %%
+# Ejercicio 4.7 Busqueda de maximo y minimo
 
 def maximo(lista):
-    """ Busca el maximo valor de una lista de numeros positivos
+    """ Busca el maximo valor de una lista de numeros
     """
     # m guarda el máximo de los elementos a medida que recorro la lista. 
     maxVal = lista[0] # Lo inicializo en 0
@@ -45,7 +59,7 @@ maximo([-5,-4])         # -4
 
 
 def minimo(lista):
-    """ Busca el minimo valor de una lista de numeros positivos
+    """ Busca el minimo valor de una lista de numeros
     """
     # m guarda el máximo de los elementos a medida que recorro la lista. 
     minVal = lista[0] # Lo inicializo en 0

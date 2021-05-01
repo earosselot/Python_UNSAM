@@ -5,6 +5,9 @@ Created on Thu Apr  1 13:34:38 2021
 @author: Eduardo
 """
 
+# %% Ejercicio 4.9
+# Propagacion
+
 def propagar(lista):
     """
     recibe una lista con 0's, 1's y -1's y devuelve una lista donde los 1's 

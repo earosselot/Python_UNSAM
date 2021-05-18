@@ -6,5 +6,5 @@ save_non_project_files = False
 
 [main]
 version = 0.2.0
-recent_files = ['ejercicios_python\\Clase06\\bbin.py', 'ejercicios_python\\Clase06\\informe_funciones.py', 'ejercicios_python\\Clase06\\fileparse.py', 'ejercicios_python\\Clase06\\plot_bbin_vs_bsec.py', 'ejercicios_python\\Clase06\\informe.py', 'ejercicios_python\\Clase06\\informe_funciones1.py', 'ejercicios_python\\Clase06\\costo_camion.py', 'ejercicios_python\\Clase06\\busqueda_en_listas.py', '..\\..\\..\\..\\..\\..\\Downloads\\caso2.py']
+recent_files = ['ejercicios_python\\Clase07\\random_walk.py', 'ejercicios_python\\Clase07\\documentacion.py', '..\\..\\08_HackerRank\\equal.py', 'ejercicios_python\\Clase07\\informe.py', 'ejercicios_python\\Clase07\\costo_camion(7.3).py', 'ejercicios_python\\Clase07\\informe(7.3).py', 'ejercicios_python\\Clase07\\entregas\\random_walk1.py']
 

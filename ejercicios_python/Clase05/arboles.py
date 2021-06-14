@@ -25,7 +25,7 @@ def leer_arboles(nombre_archivo):
     return arboleda
 
 
-arboleda = leer_arboles('../Data/arbolado.csv')
+arboleda = leer_arboles('../Data/arbolado-en-espacios-verdes.csv')
 arboleda_chica = leer_arboles('../Data/arbolado_prueba.csv')
 
 
@@ -116,7 +116,7 @@ import numpy as np
 import random
 
 
-nombre_archivo = os.path.join('..', 'Data', 'arbolado.csv')
+nombre_archivo = os.path.join('..', 'Data', 'arbolado-en-espacios-verdes.csv')
 arboleda = leer_arboles(nombre_archivo)
 especies = ['Eucalipto', 'Palo borracho rosado', 'Jacarandá']
 dicc_medidas = medidas_de_especies(especies, arboleda)

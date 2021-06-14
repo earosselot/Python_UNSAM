@@ -24,7 +24,7 @@ def leer_arboles(nombre_archivo):
     return arboleda
 
 
-arboleda = leer_arboles('../Data/arbolado.csv')
+arboleda = leer_arboles('../Data/arbolado-en-espacios-verdes.csv')
 arboleda_chica = leer_arboles('../Data/arbolado_prueba.csv')
 
 

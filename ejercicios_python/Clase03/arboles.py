@@ -26,7 +26,7 @@ def leer_parque(nombre_archivo, parque):
     return lista
                 
 
-parque = leer_parque('../Data/arbolado.csv', 'GENERAL PAZ')
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'GENERAL PAZ')
 print(len(parque))
 # 690 
 
@@ -67,19 +67,19 @@ def contar_ejemplares(lista_arboles):
     return numero_ejemplares
 
 
-parque = leer_parque('../Data/arbolado.csv', 'GENERAL PAZ')
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'GENERAL PAZ')
 numero_ejemplares = contar_ejemplares(parque)
 print(numero_ejemplares.most_common(5))
 # [('Casuarina', 97), ('Tipa blanca', 54), ('Eucalipto', 49), ('Palo borracho rosado', 44), ('Fenix', 40)]
 
 
-parque = leer_parque('../Data/arbolado.csv', 'ANDES, LOS')
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'ANDES, LOS')
 numero_ejemplares = contar_ejemplares(parque)
 print(numero_ejemplares.most_common(5))
 # [('Jacarandá', 117), ('Tipa blanca', 28), ('Ciprés', 21), ('Palo borracho rosado', 18), ('Lapacho', 12)]
 
 
-parque = leer_parque('../Data/arbolado.csv', 'CENTENARIO')
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'CENTENARIO')
 numero_ejemplares = contar_ejemplares(parque)
 print(numero_ejemplares.most_common(5))
 # [('Plátano', 137), ('Jacarandá', 45), ('Tipa blanca', 42), ('Palo borracho rosado', 41), ('Fresno americano', 38)]
@@ -124,17 +124,17 @@ def obtener_alturas(lista_arboles, especie):
     return alturas
 
 
-parque = leer_parque('../Data/arbolado.csv', 'GENERAL PAZ') 
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'GENERAL PAZ')
 alturas = obtener_alturas(parque, 'Jacarandá')
 print(max(alturas)) # 16
 print(statistics.mean(alturas)) # 10.2
 
-parque = leer_parque('../Data/arbolado.csv', 'ANDES, LOS') 
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'ANDES, LOS')
 alturas = obtener_alturas(parque, 'Jacarandá')
 print(max(alturas)) # 25
 print(statistics.mean(alturas)) # 10.54
 
-parque = leer_parque('../Data/arbolado.csv', 'CENTENARIO') 
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'CENTENARIO')
 alturas = obtener_alturas(parque, 'Jacarandá')
 print(max(alturas)) # 18
 print(statistics.mean(alturas)) # 8.96
@@ -152,7 +152,7 @@ def obtener_inclinaciones(lista_arboles, especie):
             inclinaciones.append(arbol['inclinacio'])
     return inclinaciones
     
-parque = leer_parque('../Data/arbolado.csv', 'CENTENARIO') 
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'CENTENARIO')
 inclinaciones = obtener_alturas(parque, 'Jacarandá')
 
 print(inclinaciones) # [8, 18, 9, 9, 9, 18, 13, 13, 9, 8, 8, 2, 7, 8, 9, 7, 4, 12, 11, 4, 5, 4, 9, 12, 9, 9, 10, 9, 9, 12, 15, 4, 7, 7, 8, 8, 9, 9, 9, 9, 8, 8, 4, 12, 12]
@@ -176,7 +176,7 @@ def especimen_mas_inclinado(lista_arboles):
     return (MAX_incl, MAX_incl_especie)
         
     
-parque = leer_parque('../Data/arbolado.csv', 'GENERAL PAZ') 
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'GENERAL PAZ')
 print(especimen_mas_inclinado(parque))
 # FUNCIONA LIMPIANDO EL KERNEL Y CARGANDO SOLO LAS FUNCIONES QUE SE USAN
 # leer_parque(), especies() 
@@ -201,7 +201,7 @@ def especie_promedio_mas_inclinada(lista_arboles):
              MAX_mean_incl_especie = especie
     return (MAX_mean_incl, MAX_mean_incl_especie)
 
-parque = leer_parque('../Data/arbolado.csv', 'GENERAL PAZ') 
+parque = leer_parque('../Data/arbolado-en-espacios-verdes.csv', 'GENERAL PAZ')
 print(especie_promedio_mas_inclinada(parque))
 # (25, 'No Determinable')
 
@@ -231,7 +231,7 @@ def leer_ciudad(nombre_archivo):
             lista.append(dict(zip(headers,row)))
     return lista
 
-ciudad = leer_ciudad('../Data/arbolado.csv')
+ciudad = leer_ciudad('../Data/arbolado-en-espacios-verdes.csv')
 print(especimen_mas_inclinado(ciudad))
 # (90, 'Cedro del Himalaya')
 

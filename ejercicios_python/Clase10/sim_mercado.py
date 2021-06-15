@@ -5,11 +5,10 @@ del archivo mcentral.csv
 Genera un log de movimientos en mercadolog.csv
 '''
 
-import os
 import time
 import random
 
-def leer_valores (filename):
+def leer_valores(filename):
     ''' 
     Arma una lista de productos a partir de filename
     Pera,1.22,10  --> nombre, precio, volumen
@@ -45,7 +44,7 @@ def escribir_log(filename, prod):
         time.sleep(1)   
         continue
 
-productos = leer_valores('Data/mcentral.csv') # ('Data/mcentral.csv')
-escribir_log('Data/mercadolog.csv', productos) # ('Data/mercadolog.csv')
+productos = leer_valores('../Data/mcentral.csv')
+escribir_log('../Data/mercadolog.csv', productos)
 
 
